@@ -4,8 +4,19 @@
     <router-link to="/about">About</router-link>
   </div>
   <router-view/>
+
+  <Cookies/>
 </template>
 
+<script>
+import Cookies from './components/Alerta_Cookies.vue'
+
+export default {
+  components: {
+    Cookies
+  }
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
